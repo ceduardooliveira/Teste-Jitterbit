@@ -37,6 +37,27 @@ public class TrocaValores {
 }
 ```
 
+```
+public class SwapValues {
+    public static void main(String[] args) {
+        int A = 19;
+        int B = 23;
+
+        System.out.println("Before swap:");
+        System.out.println("A = " + A);
+        System.out.println("B = " + B);
+
+        A = A + B;
+        B = A - B;
+        A = A - B;
+
+        System.out.println("\nAfter swap:");
+        System.out.println("A = " + A);
+        System.out.println("B = " + B);
+    }
+}
+
+```
 # 2 - Programa FizzBuzz
 
 ## Crie um programa em Java para exibir uma lista de 1 a 100, com as seguintes exceções:
