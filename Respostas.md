@@ -91,6 +91,24 @@ public class FizzBuzz {
     }
 }
 ```
+
+```
+public class FizzBuzz {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i);
+            }
+        }
+    }
+}
+````
 # 3 - Imprimir os Primeiros Números da Série Fibonacci até Exceder 100
 
 ### Imprima os primeiros números da série Fibonacci até que excedam 100. A série Fibonacci é da seguinte forma: 0, 1, 1, 2, 3, 5, 8, 13, 21, etc...
@@ -112,9 +130,25 @@ public class Fibonacci {
         }
     }
 }
-
 ```
 
+```
+public class Fibonacci {
+    public static void main(String[] args) {
+        int a = 0;
+        int b = 1;
+        
+        System.out.println(a);
+        while (b <= 100) {
+            System.out.println(b);
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+    }
+}
+
+````
 # 4 - Contar o Número de Propriedades em um Objeto (JavaScript)
 
 ```
@@ -156,8 +190,25 @@ for (let i = 0; i < array.length; i++) {
 console.log("Soma dos números pares:", somaPares);
 console.log("Produto dos números ímpares:", produtoImpares);
 ```
+```
+// Provided array
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
+let sumEvens = 0;
+let productOdds = 1;
 
+for (let i = 0; i < array.length; i++) {
+  if (array[i] % 2 === 0) {
+    sumEvens += array[i];
+  } else {
+    productOdds *= array[i];
+  }
+}
+
+console.log("Sum of even numbers:", sumEvens);
+console.log("Product of odd numbers:", productOdds);
+
+```
 # DATABASE
 
 - 1 FALSE
