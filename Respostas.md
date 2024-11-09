@@ -265,13 +265,24 @@ LEFT JOIN
 ```
 
 Explicação:
+```
 
     FROM Products p: Começamos selecionando da tabela Products (apelidada de p).
     LEFT JOIN ProductPhotos ph ON p.product_id = ph.product_id: Realizamos um LEFT JOIN entre as tabelas Products e ProductPhotos. A condição de junção é p.product_id = ph.product_id, ou seja, associamos os produtos às suas fotos.
     SELECT Fields: Selecionamos os campos relevantes de ambas as tabelas:
         Da tabela Products: product_id, product_name, description, price, stock_quantity, category_id.
         Da tabela ProductPhotos: photo_id, photo_url, photo_description.
+```
+```
+FROM Products p: We start selecting from the Products table (aliased as p).
+LEFT JOIN ProductPhotos ph ON p.product_id = ph.product_id: We perform a LEFT JOIN between
+the Products and ProductPhotos tables.
+The join condition is p.product_id = ph.product_id, associating products with their photos.
+SELECT Fields: We select the relevant fields from both tables:
+    From the Products table: product_id, product_name, description, price, stock_quantity, category_id.
+    From the ProductPhotos table: photo_id, photo_url, photo_description.
 
+```
 Resultado: A consulta retorna todos os produtos junto com suas respectivas fotos. Se um produto não tiver fotos associadas, os campos relacionados às fotos terão valores NULL.
 
 - 6 - Tipos de Bancos de Dados Não Relacionais
