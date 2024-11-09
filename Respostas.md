@@ -163,6 +163,17 @@ console.log("Número de propriedades no objeto:", numeroDePropriedades);
 const propriedades = ["id_erp", "id_ecom", "id_produto", "quantidade", "valor", "status"];
 
 ```
+```
+// Counts the number of properties in the object
+const numberOfProperties = Object.keys(obj).length;
+
+// Displays the number of properties
+console.log("Number of properties in the object:", numberOfProperties);
+
+// Example of object properties
+const properties = ["id_erp", "id_ecom", "id_product", "quantity", "value", "status"];
+
+```
 
 # 5 - Soma de Itens Pares e Produto de Itens Ímpares
 
